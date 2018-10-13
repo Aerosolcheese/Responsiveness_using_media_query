@@ -1,0 +1,117 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+body{
+	font-family: 'PT Sans', sans-serif;
+}
+.container{
+	width: 90%;
+	margin: 0px auto; 
+}
+
+/*clock*/
+.container .top .countdownContainer td{
+	text-align: center;
+	vertical-align: middle;
+}
+.container .top .countdownContainer{
+	position: relative;
+	top: 50%;
+	left: 50%;
+	transform : translateX(-50%) translateY(-50%);
+	text-align: center;
+	vertical-align: middle;
+
+
+
+}
+
+.info{
+	font-size: 40px;
+	text-align: center;
+	vertical-align: middle;
+
+}
+
+
+/*content*/
+.top{
+	background-color: #2B7166;
+	height: 300px;
+	color: white;
+	text-indent: 50px;
+	margin: 0px auto; 
+}
+.top .up{
+	width: 90%;
+	margin: 0px auto;
+
+}
+.left{
+	width: 50%;
+	background-color: #3DAF9B;
+	height: 300px;
+	color: white;
+	margin: 0px left;
+	float: left
+	
+}
+.left .sec1{
+	position: relative;
+	width: 90%;
+	margin: 10% auto;
+}
+.right{
+	width: 50%;
+	background-color: #323A44;
+	height: 300px;
+	color: white;
+	margin: 0px right;
+	float: left;
+}
+.right .sec2{
+	position: relative;
+	width: 90%;
+	margin: 5% auto;
+}
+
+
+/*Media_queries*/
+@media screen and (min-width: 768px) and (max-width: 1024px){
+.container{
+	width: 100%;
+	margin: 0px auto;
+}
+}
+@media screen and (min-width: 481px) and (max-width: 767px){
+.container{
+	width: 100%;
+}
+.left{
+	width: 100%;
+}
+.right{
+	width: 100%;
+}
+}
+@media screen and (min-width: 320px) and (max-width: 480px){
+.container{
+	width: 100%;
+}
+.left{
+	width: 100%;
+}
+.right{
+	width: 100%;
+}
+.countdownContainer td{
+	display: block;
+}
+.top{
+	height: 500px;
+}
+}
+
+
+
